@@ -85,7 +85,7 @@ public class crawler{
 
 
     public void create_query(String searched){
-        //       -page:{some number} can change the page is being searched
+        //       -page:some_number can change the page is being searched
         int index = searched.indexOf(" -page:");
         if(index != -1){
             int page_num = Integer.parseInt(searched.substring(index+7));
@@ -117,11 +117,13 @@ public class crawler{
     public void search(){
         StringBuilder result = new StringBuilder();
         String string_result = get_request(result);
-        ArrayList<Website> data = remove_start_info(string_result);
-
-        System.out.println("\n===================================================\n\n[Results]: " + data.size());
-        for(Website w : data)
-            System.out.println(w + "\n");
+        if(string_result != "[Error]") {
+            ArrayList<Website> data = remove_start_info(string_result);
+            System.out.println("\n===================================================\n\n[Results]: " + data.size());
+            for (Website w : data)
+                System.out.println(w + "\n");
+        }
+        System.out.println("[Error] Invalid request");
     }
 
 
