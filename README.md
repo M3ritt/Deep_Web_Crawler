@@ -12,3 +12,7 @@ This is a command line search tool allows a user to enter a search term or phras
 
 <h2> Ethical Notice: </h2> 
 The software is provided as is, without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringment. In no event shall the author, Josh Meritt. or copyright holder be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use of other dealings in the software.
+
+<h2> Example </h2>
+
+![example](https://user-images.githubusercontent.com/36414900/113208315-a55f1900-923f-11eb-85b7-9249a3f5e568.png)
