@@ -122,8 +122,7 @@ public class crawler{
             System.out.println("\n===================================================\n\n[Results]: " + data.size());
             for (Website w : data)
                 System.out.println(w + "\n");
-        }
-        System.out.println("[Error] Invalid request");
+        } else System.out.println("[Error] Invalid request");
     }
 
 
